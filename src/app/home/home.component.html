@@ -1,0 +1,18 @@
+<p>home works1!</p>
+
+
+<ul>
+<li *ngFor="let book of books">
+Id:{{book.id}} , Name: {{book.name}}
+
+<a [routerLink]="['/view-detail',book.id]">Show Detail</a>
+</li>
+
+
+</ul>
+<ul>
+    <li>
+<a [routerLink]="['/view-detail',5]">Show Detail1</a>
+
+    </li>
+</ul>
